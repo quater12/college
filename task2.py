@@ -11,12 +11,12 @@ full_name = (b, c)
 print("Ім'я і прізвище:", full_name)
 
 if isinstance(d, int):
-    print("Тип змінної d (вік) - це int.")
+    print("d - це int.")
     other_types = [type(a), type(b), type(c)]
     for t in other_types:
         if t == type(d):
-            print(f"Тип даних віку (int) збігається з типом {t}.")
+            print(f"Тип даних віку збігається з типом {t}.")
         else:
-            print(f"Тип даних віку (int) не збігається з типом {t}.")
+            print(f"Тип даних віку не збігається з типом {t}.")
 else:
     print("Тип змінної d не є int.")
