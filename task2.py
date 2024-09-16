@@ -14,8 +14,8 @@ else:
     print("Ім'я і прізвище мають різні типи даних.")
 
 full_name = (b, c)
-
 print("Ім'я і прізвище:", full_name)
+
 if isinstance(d, int):
     print("Тип змінної d (вік) - це int.")
     other_types = [type(a), type(b), type(c)]
