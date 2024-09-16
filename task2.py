@@ -1,12 +1,6 @@
-﻿a = "Hello, World!"
 b = "Boryslaw"
 c = "Humenuik"
 d = 16
-
-print("Тип змінної a:", type(a))
-print("Тип змінної b:", type(b))
-print("Тип змінної c:", type(c))
-print("Тип змінної d:", type(d))
 
 if type(b) == type(c):
     print("Ім'я і прізвище мають один і той же тип даних:", type(b))
