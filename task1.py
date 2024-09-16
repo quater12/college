@@ -2,7 +2,7 @@
 b = "Boryslaw"
 c = "Humenuik"
 d = 16
-print("Тип змінної a:", type(a))
-print("Тип змінної b:", type(b))
-print("Тип змінної c:", type(c))
-print("Тип змінної d:", type(d))
+print("a:", type(a))
+print("b:", type(b))
+print("c:", type(c))
+print("d:", type(d))
