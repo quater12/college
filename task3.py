@@ -2,9 +2,9 @@ lst = [1, 2, 3, 4, 5, 6, 3, 4, 5, 7, 6, 5, 4, 3, 4, 5, 4, 3, 'Привіт', 'а
 lst_int = [] 
 lst_str = [] 
  
-def clean_lst(lst): 
+def cln_lst(lst): 
     return list(set(lst)) 
-cleaned_lst = clean_lst(lst) 
+cleaned_lst = cln_lst(lst) 
  
 def sort_lst(lst): 
     for item in lst: 
