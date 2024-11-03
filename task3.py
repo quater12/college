@@ -1,22 +1,23 @@
-lst = [1,2,3,4,5,6,3,4,5,7,6,5,4,3,4,5,4,3, 'Привіт', 'Анаконда']
-def double(lst):
-    duplicatee = set()
-    result = []
-    for item in lst :
-        if item not in duplicatee :
-            duplicatee.add(item)
-            result.append(item)
-    return result
-
-def sort_custom(input_list):
-    numbers = [item for item in input_list if isinstance(item, (int, float))]
-    strings = [item for item in input_list if isinstance(item, str)]
-    numbers.sort()
-    strings.sort()
-    return numbers+strings
-
-first_list = double(lst)
-sorted_list = sort_custom(first_list)
-print(sorted_list)
-
-
+lst = [1, 2, 3, 4, 5, 6, 3, 4, 5, 7, 6, 5, 4, 3, 4, 5, 4, 3, 'Привіт', 'анаконда'] 
+lst_int = [] 
+lst_str = [] 
+ 
+def clean_lst(lst): 
+    return list(set(lst)) 
+cleaned_lst = clean_lst(lst) 
+ 
+def sort_lst(lst): 
+    for item in lst: 
+        if type(item) == int: 
+            lst_int.append(item) 
+        if type(item) == str: 
+            item = item.lower() 
+            lst_str.append(item) 
+ 
+sort_lst(cleaned_lst) 
+ 
+lst_int.sort() 
+lst_str.sort() 
+ 
+lst = lst_int + lst_str 
+print(lst)
