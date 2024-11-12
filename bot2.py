@@ -116,7 +116,6 @@ def handle_more_purchase(message):
 @bot.message_handler(func=lambda message: message.text == "Ні")
 def handle_no_more_purchase(message):
     bot.reply_to(message, "Дякую за використання бота! Повертаю вас на головний екран.")
-    send_welcome(message)
 
 @bot.message_handler(commands=['help'])
 def send_help(message):
